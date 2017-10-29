@@ -4,10 +4,11 @@
  * User: kok
  * Date: 16-10-21
  * Time: 下午2:39
+ * 载入类
  */
 namespace core;
 
-class kok {
+class Loader {
     public $fields= [];
     static public $classMap = [];
     static public function run(){
@@ -30,6 +31,11 @@ class kok {
 
     }
 
+    /**
+     * 命名空间 \\ 替换成/
+     * @param $class
+     * @return bool
+     */
     static public function load($class){
         $class = str_replace('\\','/',$class);
         if(isset(self::$classMap[$class])){

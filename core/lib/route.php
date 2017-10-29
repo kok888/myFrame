@@ -1,12 +1,13 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: kok
- * Date: 16-10-21
- * Time: 下午2:44
- */
+
 namespace core\lib;
 use core\lib\config;
+
+/**
+ * 路由类
+ * Class route
+ * @package core\lib
+ */
 class route{
     public $ctrl;
     public $method;

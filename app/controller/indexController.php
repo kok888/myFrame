@@ -6,11 +6,11 @@
  * Time: 下午3:37
  */
 namespace app\controller;
-class indexController extends \core\kok {
+class indexController extends \core\Loader {
     public function index(){
 
         $model = new \app\model\userModel('user');
-       # dump($model->getOne('tt','*',['id'=>3]));
+        dump($model->getOne('tt','*',['id'=>3]));
         $this->assign('lover','kok');
         $this->display('index.html');
     }
